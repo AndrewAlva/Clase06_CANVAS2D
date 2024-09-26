@@ -1,17 +1,14 @@
 body{
-    background-color: rgb(1, 103, 106);
-    color:brown;
+    background-color: #B4DEC2;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 72px;
     }
-
-    #lienzo {
+#lienzo {
         width: 100%;
         height: 100%;
         position: absolute;
         top: 0;
         left: 0;
-    
-        border: 2px solid red;
+
         box-sizing: border-box;
     }

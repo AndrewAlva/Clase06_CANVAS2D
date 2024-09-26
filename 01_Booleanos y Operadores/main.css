@@ -1,6 +1,15 @@
-body{
-    background-color: rgb(169, 187, 205);
-    color:brown;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-    }
+body {
+    background-color: #202020;
+    color: #fff;
+    padding: 20px 50px;
+  }
+  
+  h1 {
+    font-size: 20px;
+  }
+  
+  h1 > span:nth-child(2) {
+    color: aqua;
+    font-size: 32px;
+    margin-left: 30px;
+  }

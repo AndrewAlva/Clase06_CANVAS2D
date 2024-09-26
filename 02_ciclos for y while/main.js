@@ -1,6 +1,6 @@
 /* Ejemplo de ciclo "for" aka "for loop" */
 /* Puedes intentar modificar el número 5 por 10 o 200 para probar */
-for (let index = 0; index < 5; index++) {
+for (let index = 0; index < 45; index += 5) {
     const DOM_ELEMENT = document.createElement("h1");
     DOM_ELEMENT.innerText = `Element index: ${index}`;
     document.body.appendChild(DOM_ELEMENT);
@@ -21,7 +21,7 @@ DOM_ELEMENT_3.innerText = `saludo.length (o cantidad de caracteres): ${saludo.le
 document.body.appendChild(DOM_ELEMENT_3);
 
 while (saludo.length < 20) {
-    saludo += "a";
+    saludo += "!";
 }
 /* 
     Hay 2 cosas interesantes pasando aquí:

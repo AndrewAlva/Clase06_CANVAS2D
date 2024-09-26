@@ -13,7 +13,7 @@ function updateCanvasSize() {
 /*///// 1. Definición de nuestra clase base Círculo para generar objetos ///*/
 class Circulo {
     constructor(params = {}) {
-        this.borderColor = params.borderColor || "aqua"; // Asignamos la posibilidad de recibir un color de borde diferente (borderColor) cada vez que se genere un círculo nuevo
+        this.borderColor = params.borderColor || "brown"; // Asignamos la posibilidad de recibir un color de borde diferente (borderColor) cada vez que se genere un círculo nuevo
         this.borderWidth = 4;
         this.x = Math.random() * 200;
         this.y = Math.random() * 200;
@@ -32,7 +32,7 @@ class Circulo {
         CTX.strokeStyle = this.borderColor;
         CTX.lineWidth = this.borderWidth;
         CTX.beginPath();
-        CTX.ellipse(this.x, this.y, 30, 30, 0, 0, PI2);
+        CTX.ellipse(this.x, this.y, 50, 50, 0, 0, PI2);
         CTX.closePath();
         CTX.stroke();
 
@@ -53,7 +53,7 @@ let misCirculos = [];
 
 
 /*///// 4. Usamos un ciclo "for" para crear nuevos círculo. ///*/
-for (let i = 0; i < 7; i++) {
+for (let i = 0; i < 15; i++) {
     let nuevoCirculo = new Circulo({ borderColor: "orange" }); // Asignamos un color diferente a estos nuevos círculos para diferenciarlos del primero que hicimos.
 
     /*///// 4.1 Usamos la función ".push()" incluida en los Arrays para guardar nuestro círculo recién creado. ///*/
@@ -63,7 +63,7 @@ for (let i = 0; i < 7; i++) {
 
 
 /*///// 5. A manera de ejemplo, accedemos al 3er objeto en la lista y modificamos un atributo (marcado por el índice 2 teniendo en cuenta que los índices empiezan a contar desde el "0"). ///*/
-misCirculos[2].borderColor = "white"
+misCirculos[2].borderColor = "blue"
 
 
 

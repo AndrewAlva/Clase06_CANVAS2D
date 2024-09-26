@@ -21,13 +21,13 @@ TITLE1.innerText = ejemplo1;
   Puedes consultar la lista completa de operadores de comparación aquí:
   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators#arithmetic_operators
  */
-ejemplo1 += 5; // La sintaxis larga sería algo como: ejemplo1 = ejemplo1 + 6;
+ejemplo1 *= 5; // La sintaxis larga sería algo como: ejemplo1 = ejemplo1 + 6;
 TITLE2.innerText = ejemplo1;
 
 
 // El operador de "Suma" (+) puede utilizarse para unir cadenas de texto, por ejemplo:
-let ejemploA = "Soy un texto.";
-let ejemploB = " Y yo otro texto.";
+let ejemploA = "Hola mundo.";
+let ejemploB = " Adiós Mundo.";
 let ejemploC = ejemploA + ejemploB;
 
 TITLE3.innerText = ejemploC;
@@ -37,7 +37,7 @@ TITLE3.innerText = ejemploC;
 
 /* ///// Ejemplos de resultados de Operadores de Comparación ///*/
 let ejemplo2 = 30;
-let booleano1 = ejemplo1 > ejemplo2;
+let booleano1 = ejemplo1 > ejemplo2; // resultado: TRUE or FALSE 
 /*
   ">" compara 2 valores de una manera que se traduciría como "¿El valor a la izquierda del símbolo  > es mayor que el valor a la derecha?".
   

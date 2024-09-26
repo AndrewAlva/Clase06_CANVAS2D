@@ -38,7 +38,7 @@ function frame() {
     CTX.clearRect(0, 0, CANVAS.width, CANVAS.height);
 
     /*///// 3. Después de haber limpiado el canvas, creamos el primer ciclo for para renderizar 10 círculos en este ejemplo ///*/
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 25; i++) {
         redCircleX = i * 35; // Aquí estamos calculando la posición de cada círculo, con una distancia igual entre todos de 35 pixeles entre su centro, el primer circulo estará en la coordenada x 0 * 35, que es 0; el segundo estará en 1 * 35, que es 35; el tercero en 2 * 35 que es igual a 70, y así sucesivamente.
         renderCircleRed(redCircleX, 35);
     }
@@ -52,7 +52,7 @@ function frame() {
         /*
             La condición que estamos estableciendo para ejecutar es que la posición del último círculo verde esté dentro de los límites del canvas, o dicho de otra manera, que haya espacio para dibujar otro círculo dentro del canvas, así dependiendo del tamaño de la pantalla dibujaremos una cantidad diferente de círculos.
         */
-        greenCircleX = whileCounter * 60;
+        greenCircleX = whileCounter * 100;
         renderCircleGreen(greenCircleX, 90);
 
         whileCounter++; // Similar al ciclo for, estamos usando el operador "++" para incrementar en 1 unidad a cada repetición del ciclo while

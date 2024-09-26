@@ -14,12 +14,12 @@ function updateCanvasSize() {
 let circulo = {
     /*///// 1.1 Empezamos definiendo las "propiedades" del objeto, es decir los datos, como lo son: color, grosor de linea, posicion y velocidad; aunque pueden ser más. ///*/
     borderColor: "green",
-    borderWidth: 4,
-    x: 0,
-    y: 0,
+    borderWidth: 20,
+    x: CANVAS.width/8,
+    y: CANVAS.height-600,
     speed: {
-        x: 0.7,
-        y: 0.3
+        x: 0.1,
+        y: 0.5
     },
 
 
@@ -39,7 +39,7 @@ let circulo = {
         CTX.strokeStyle = this.borderColor;
         CTX.lineWidth = this.borderWidth;
         CTX.beginPath();
-        CTX.ellipse(this.x, this.y, 30, 30, 0, 0, PI2);
+        CTX.ellipse(this.x, this.y, 70, 70, 0, 0, PI2);
         CTX.closePath();
         CTX.stroke();
 

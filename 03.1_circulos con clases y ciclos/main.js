@@ -20,10 +20,10 @@ class Circulo {
     
             A partir de aquí, la definición del objeto te va a resultar bastante familiar, es igual a lo que hemos hecho hasta ahora.
         */
-        this.borderColor = params.borderColor || "#00ff99";
-        this.borderWidth = 4;
-        this.x = Math.random() * 200;
-        this.y = Math.random() * 200;
+        this.borderColor = params.borderColor || "#FA6901"; //condiciones AND (&&) OR (||), aplicando BOOLEAN TRUE/false si existe uno u otro. 
+        this.borderWidth = 5;
+        this.x = Math.random() * CANVAS.width;
+        this.y = Math.random() * CANVAS.height;
         /*
             Math.random() es una función que nos devuelve un valor decimal aleatorio entre 0 y 1. Al multiplicarlo por un número es como si ampliaramos el rango de ese valor aleatorio.
     
@@ -31,7 +31,7 @@ class Circulo {
         */
         this.speed = {
             x: Math.random() * 0.7,
-            y: 0.3
+            y: 0.7
         }
     }
 
@@ -47,7 +47,7 @@ class Circulo {
         CTX.strokeStyle = this.borderColor;
         CTX.lineWidth = this.borderWidth;
         CTX.beginPath();
-        CTX.ellipse(this.x, this.y, 30, 30, 0, 0, PI2);
+        CTX.rect(this.x, this.y, 80, 80, 80, 80);
         CTX.closePath();
         CTX.stroke();
 
@@ -73,14 +73,15 @@ let circulo1 = new Circulo();
 
 /*///// 3. Definimos la funcion de renderizado que estaremos repitiendo usando requestAnimationFrame() ///*/
 function render() {
-    CTX.clearRect(0, 0, CANVAS.width, CANVAS.height);
+   CTX.clearRect(0, 0, CANVAS.width, CANVAS.height);
 
     /*///// 4. Ciclo "for" para crear nuevos circulos ///*/
     /*
         Estamos usando el ciclo "for" para crear circulos dentro del render porque no hemos visto las "estructuras de datos" tipo "array" para correr el ciclo for una sola vez y guardar los nuevos objetos; lo veremos en el siguiente ejercicio.
     */
     for (let i = 0; i < 5; i++) {
-        let nuevoCirculo = new Circulo({ borderColor: "#ff6600" }); // Definimos un parametro para el color del borde para que estos nuevos círculos sean diferentes del que creamos fuera del ciclo for.
+        let nuevoCirculo = new Circulo({ borderColor: "#4CD3FA" }); 
+// Definimos un parametro para el color del borde para que estos nuevos círculos sean diferentes del que creamos fuera del ciclo for.
 
         /*///// 4.1 Importante llamar a la función que está renderizando el objeto "circulo" en el canvas ///*/
         nuevoCirculo.draw();

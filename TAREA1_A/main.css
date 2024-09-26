@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(1, 103, 106);
+    background-color: rgb(173, 196, 197);
     color:brown;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 72px;
@@ -12,6 +12,6 @@ body{
         top: 0;
         left: 0;
     
-        border: 2px solid red;
+        border: 6px dotted rgb(35, 64, 91);
         box-sizing: border-box;
     }
